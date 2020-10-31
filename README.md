@@ -470,6 +470,8 @@ echo json_encode($returnData);
 
 ### send.php
 
+- if email successfull then will store to db on postgresql
+
 ```php
 <?php
 header("Access-Control-Allow-Origin: *");
@@ -629,5 +631,10 @@ http://localhost/php-login-regis-emailer-api/send.php
 <img src="images/Screenshot_6.png">
 
 ## Result
-
+- inbox email
 <img src="images/Screenshot_7.png">
+- database posting email
+<img src="images/Screenshot_8.png">
+- database users
+<img src="images/Screenshot_9.png">
+  
