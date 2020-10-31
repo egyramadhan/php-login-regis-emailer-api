@@ -20,6 +20,9 @@ Inside the application folder, we will create the following files and folders.
 * Copy the "**src**" folder inside the php-login-regis-emailer-api folder.
 * Rename the "**src**" folder to "**jwt**".
 
+## Install PHPmailer
+* with **composer** from [Here](https://github.com/PHPMailer/PHPMailer)
+
 ## Classes Folder
 Now inside the application folder, you have to create a new folder called classes. After that, inside the classes folder, we will create two files or classes –
 <br>
@@ -631,10 +634,12 @@ http://localhost/php-login-regis-emailer-api/send.php
 <img src="images/Screenshot_6.png">
 
 ## Result
-- inbox email
+  * inbox email
 <img src="images/Screenshot_7.png">
-- database posting email
+
+  * database posting email
 <img src="images/Screenshot_8.png">
-- database users
+
+  * database users
 <img src="images/Screenshot_9.png">
   
