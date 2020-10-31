@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "f538e545-f8ed-4b49-ba0e-39ef106b229f",
+		"name": "php + postgresql + emailer + api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"user\",\r\n    \"email\":\"ketupat60@gmail.com\",\r\n    \"password\":\"qwerty123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/php-login-regis-emailer-api/register.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-login-regis-emailer-api",
+						"register.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"ketupat60@gmail.com\",\r\n    \"password\":\"qwerty123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/php-login-regis-emailer-api/login.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-login-regis-emailer-api",
+						"login.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3BocF9hdXRoX2FwaVwvIiwiYXVkIjoiaHR0cDpcL1wvbG9jYWxob3N0XC9waHBfYXV0aF9hcGlcLyIsImlhdCI6MTYwNDA3ODY4NCwiZXhwIjoxNjA0MDgyMjg0LCJkYXRhIjp7InVzZXJfaWQiOjJ9fQ.XaRga9vXdzHtbmxvv3R8iS97B1hWMY_CHcQX7orQx68",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/php-login-regis-emailer-api/user-info.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-login-regis-emailer-api",
+						"user-info.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3BocF9hdXRoX2FwaVwvIiwiYXVkIjoiaHR0cDpcL1wvbG9jYWxob3N0XC9waHBfYXV0aF9hcGlcLyIsImlhdCI6MTYwNDA3ODY4NCwiZXhwIjoxNjA0MDgyMjg0LCJkYXRhIjp7InVzZXJfaWQiOjJ9fQ.XaRga9vXdzHtbmxvv3R8iS97B1hWMY_CHcQX7orQx68",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"egyramadhan3@gmail.com\",\r\n    \"subject\":\"test email\",\r\n    \"posting\":\"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis laboriosam neque quaerat rerum earum iste tempore deserunt odit quisquam similique id explicabo sed fugiat, animi repudiandae mollitia aspernatur quidem in!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/php-login-regis-emailer-api/send.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-login-regis-emailer-api",
+						"send.php"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
